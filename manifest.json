@@ -1,0 +1,41 @@
+{
+  "author": "Flywheel",
+  "cite": "",
+  "command": "poetry run python run.py",
+  "config": {
+    "debug": {
+      "default": false,
+      "description": "Log debug messages",
+      "type": "boolean"
+    },
+    "text": {
+      "type": "string",
+      "description": "message for log"
+    }
+  },
+  "custom": {
+    "flywheel": {
+      "suite": "zDevelopment",
+      "show-job": true
+    },
+    "gear-builder": {
+      "category": "analysis",
+      "image": "amhe4269/afni-3drsfc:0.0.1_rc0"
+    }
+  },
+  "description": "{{ }}",
+  "environment": {},
+  "inputs": {
+    "preprocessing-pipeline-file": {
+      "base": "file",
+      "description": "Zipped preprocessed results directory (e.g. fmriprep). Bids-derivative format."
+    }
+  },
+  "label": "AFNI 3dRSFC",
+  "license": "Other",
+  "maintainer": "Flywheel <support@flywheel.io>",
+  "name": "afni-3drsfc",
+  "source": "",
+  "url": "",
+  "version": "0.0.1_rc0"
+}
